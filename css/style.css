@@ -26,7 +26,8 @@
     #mod_der,#mod_izq {
         width: 100%;
         /* padding: 20px; */
-        margin: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
 
     .destacado2{
@@ -386,6 +387,7 @@
     padding: 10px;
     
 }
+
 
 .pie div a {
     text-decoration: none;
