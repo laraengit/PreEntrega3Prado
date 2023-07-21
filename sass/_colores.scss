@@ -1,9 +1,22 @@
 //Variables
 
 $colores: (
-    $verde: #6bba49,
-    $verdeClaro: #c7e3ba,
-    $rosa: #FDAFC2,
-    $naranje: #FF914D
+    verde: #6bba49,
+    verdeClaro: #c7e3ba,
+    rosa: #FDAFC2,
+    naranja: #FF914D
 );
 
+@mixin colorCaja($color)
+{
+    background-color: $color;
+    border: 2px solid $color;
+}
+
+@each $color,$valor in $colores {
+    .#{$color}{
+        @include colorCaja($valor);
+    }
+    
+
+}
