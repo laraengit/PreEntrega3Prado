@@ -1,0 +1,121 @@
+/* Estructura */
+/* Grid */
+.gridHeader {
+    grid-area: encabezado;
+}
+.gridFooter {
+    grid-area: pie;
+}
+
+.gridBody {
+    display: grid;
+    width: 100%;
+    height:100vh;
+}
+/* Index */
+
+.gridBodyInicio {
+    @extend .gridBody;
+    grid-template-areas:
+    "encabezado  "
+    "principal  "
+    "seccion "
+    "sponsors"
+    "pie ";
+    grid-template-columns: 1fr;
+    .gridMain {
+        grid-area: principal;
+    }
+    .gridSection {
+        grid-area: seccion;
+    }
+    .gridSponsors{
+        grid-area: sponsors;
+    
+    }
+}
+
+/* Guía */
+.gridBodyGuia {
+    @extend .gridBody;
+    grid-template-areas:
+    "encabezado  encabezado"
+    "mainGuia mainGuia "
+    "seccLugares seccLugares"
+    "pie pie";
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:auto 1fr 2fr auto;
+
+    .gridMainGuia {
+        grid-area: mainGuia;
+    }
+    
+    .gridSectionLugares {
+        grid-area: seccLugares;
+    }
+    
+}
+
+/* Validar */
+.gridBodyValidar {
+    @extend .gridBody;
+    grid-template-areas:
+    "encabezado "
+    "mainValidar "
+    "formulario"
+    "pie";
+    grid-template-columns:1fr;
+    grid-template-rows:auto 1fr 3fr auto;
+    .gridMainValidar {
+        grid-area: mainValidar;
+    }
+    .gridCompletar {
+        grid-area: formulario;
+    }
+}
+/* +Info */
+.gridBodyInfo {
+    @extend .gridBody;
+    grid-template-areas:
+    "encabezado "
+    "mainInfo "
+    "info"
+    "pie";
+    grid-template-columns:1fr;
+    //grid-template-rows:auto 1fr 2fr auto;
+    .gridMainInfo{
+        grid-area: mainInfo;
+    }
+    .gridFullInfo{
+        grid-area: info;
+    }
+}
+/* Contacto */
+.gridBodyContacto {
+    @extend .gridBody;
+    grid-template-areas:
+    "encabezado "
+    "mainContacto "
+    "contacto"
+    "pie";
+    grid-template-columns:1fr;
+    grid-template-rows:auto 1fr 2fr auto;
+    .gridMainContacto{
+        grid-area: mainContacto;
+    }
+    .gridContacto {
+        grid-area: contacto;
+    }
+}
+
+/* Estructura interna */
+/* Contacto */
+#contacto {
+    margin-top: 10px;
+    form {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
+

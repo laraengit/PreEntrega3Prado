@@ -1,0 +1,23 @@
+/* Letras */
+//Variables
+//Fuentes
+$destacado: 'Oleo Script', cursive;
+$botonesOlinks: 'Open Sans', sans-serif;
+$textoOinput: 'Karla', sans-serif;
+$titSecc: 'Mulish', sans-serif;
+//Tamaños letras pantalla mobile
+$tamDestacado1: 30pt;
+$tamDestacado2: 15pt;
+$tamBotones: 60%;
+$tamInput:100%;
+$tamTexto:70%;
+$tamTitSecc1: 15pt;
+$tamTitSecc2:12pt;
+
+
+//Funciones
+@mixin tipoLetraGeneral($letra,$color){
+    font-family: $letra;
+    color: $color;
+}
+

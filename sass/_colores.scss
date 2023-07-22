@@ -1,3 +1,4 @@
+/* Colores */
 //Variables
 
 $colores: (
@@ -17,6 +18,4 @@ $colores: (
     .#{$color}{
         @include colorCaja($valor);
     }
-    
-
 }

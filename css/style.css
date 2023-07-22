@@ -263,7 +263,47 @@
     grid-area: contacto;
 }
 
-
+/* Validar */
+.gridBodyValidar {
+    
+    display: grid;
+    width: 100%;
+    height:100vh;
+    grid-template-areas:
+    "encabezado "
+    "mainValidar "
+    "formulario"
+    "pie";
+    grid-template-columns:1fr;
+    grid-template-rows:auto 1fr 3fr auto;
+    
+}
+.gridMainValidar {
+    grid-area: mainValidar;
+}
+.gridCompletar {
+    grid-area: formulario;
+}
+/* Info */
+.gridBodyInfo {
+    display: grid;
+    width: 100%;
+    height:100vh;
+    grid-template-areas:
+    "encabezado "
+    "mainInfo "
+    "info"
+    "pie";
+    grid-template-columns:1fr;
+    grid-template-rows:auto 1fr 3fr auto;
+    
+}
+.gridMainInfo{
+    grid-area: mainInfo;
+}
+.gridFullInfo{
+    grid-area: info;
+}
 
  .bordeLink:hover {
     border-bottom:2px solid ;
@@ -419,13 +459,13 @@
 .input {
     padding: 15px;
     text-align: center;
-    
+    align-content: center; 
 }
 
 .input .relleno {
     margin: 15px;
     border-radius: 5px;
-    align-content: center; 
+    
 }
 
 .input .relleno label{
@@ -516,29 +556,37 @@
     /* border-color: aliceblue;
  */
 }
-
+.input .final {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content:center;
+    text-align: center;
+}
 .input .final .boton{
-    width: 30%;
-    margin-left: 35%;
-    display: block;
+    width: auto;
+    /* margin-left: 35%; */
+    /* display: block; */
     text-align: center;
 }
 
 /* VALIDAR */
-#infoValid {
+/* #infoValid {
     width: 100%;
     height:50%;
+} */
+#infoValid > form {
+    display: flex;
+    flex-flow: column wrap;
 }
-#infoValid div.fila {
+/* #infoValid div.fila {
     width: 80%;
     height: auto;
-    display: inline-block;
-    
-}
+    display: inline-block; 
+} */
 #infoValid div.input {
-    width: 40%;
+    /* width: 40%; */
     height: auto;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 
