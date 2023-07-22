@@ -1,5 +1,41 @@
 @charset "UTF-8";
-/* Responsive */ /* Estructura */
+/* Colores */
+.verde {
+  background-color: #6bba49;
+  border: 2px solid #6bba49;
+}
+
+.verdeClaro {
+  background-color: #c7e3ba;
+  border: 2px solid #c7e3ba;
+}
+
+.rosa {
+  background-color: #FDAFC2;
+  border: 2px solid #FDAFC2;
+}
+
+.naranja {
+  background-color: #FF914D;
+  border: 2px solid #FF914D;
+}
+
+.celeste {
+  background-color: #7bbfbf;
+  border: 2px solid #7bbfbf;
+}
+
+.claro {
+  background-color: #f3f5f1;
+  border: 2px solid #f3f5f1;
+}
+
+.verdeMuyClaro {
+  background-color: #eaf6de;
+  border: 2px solid #eaf6de;
+}
+
+/* Letras */ /* Responsive */ /* Estructura */
 /* Grid */
 .gridHeader {
   grid-area: encabezado;
@@ -92,25 +128,176 @@
   justify-content: center;
 }
 
-/* Colores */
-.verde {
-  background-color: #6bba49;
-  border: 2px solid #6bba49;
+.input .final {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  text-align: center;
+}
+.input .final .boton {
+  width: auto;
+  text-align: center;
 }
 
-.verdeClaro {
-  background-color: #c7e3ba;
-  border: 2px solid #c7e3ba;
+/* Validar */
+#infoValid form {
+  display: flex;
+  flex-flow: column wrap;
+}
+#infoValid div.checkGrande {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.rosa {
-  background-color: #FDAFC2;
-  border: 2px solid #FDAFC2;
+/* Guía de lugares */
+#main .filtros ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
-.naranja {
-  background-color: #FF914D;
-  border: 2px solid #FF914D;
+#listadoLugares ul {
+  display: flex;
+  z-index: 1000;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: space-around;
+}
+#listadoLugares li.itemGuia:nth-child(n) div {
+  display: flex;
+  z-index: 1000;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
-/* Letras *//*# sourceMappingURL=main.css.map */
+/* Diseño */
+.hoverBoton {
+  border: 3px solid;
+}
+.hoverBoton:hover {
+  border: white;
+}
+
+.relleno {
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.redondo {
+  border-radius: 5px;
+}
+
+.fondoCielo {
+  background-image: url(../images/cielo-con-nubes_5102x3567_xtrafondos.com.jpg);
+}
+
+/* Contacto y Validar */
+/* Guía de lugares */
+#main nav.filtros {
+  width: 60%;
+  margin: 1% 20%;
+  text-align: center;
+  background-color: #7bbfbf;
+}
+#main nav.filtros ul {
+  padding: 0%;
+}
+#main nav.filtros li.filtra {
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+#main nav.filtros li.buscar {
+  margin: 1% 5%;
+  height: auto;
+  text-align: center;
+}
+#main #listadoLugares ul {
+  margin: 5%;
+  text-align: center;
+  padding: 0;
+}
+#main #listadoLugares li.itemGuia {
+  padding: 1%;
+  margin: 1%;
+  height: 350px;
+  width: 500px;
+  background-color: #f3f5f1;
+}
+#main #listadoLugares li.itemGuia:hover {
+  background-color: #eaf6de;
+}
+#main .dataValid li {
+  margin: 10px;
+  text-align: center;
+}
+#main .dataValid input {
+  bottom: 0;
+}
+#main .lugar {
+  margin: 10px;
+}
+#main .lugar iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Información */
+article {
+  width: 100%;
+  margin: 1%;
+}
+article:nth-child(n) {
+  margin-top: 0.5%;
+}
+
+section .info {
+  width: 80%;
+  margin: 2% 10%;
+  padding: 1%;
+  background-color: #eaf6de;
+}
+
+/* Formularios */
+.input {
+  padding: 15px;
+  text-align: center;
+  align-content: center;
+}
+.input input {
+  /* font-family: 'Karla', sans-serif;
+  font-weight: 100; */
+  padding: 10px;
+  margin: 10px;
+  display: inline;
+  width: 90%;
+  position: relative;
+  text-align: left;
+}
+.input select {
+  color: rgb(48, 53, 55);
+  padding: 10px;
+  margin: 10px;
+  display: inline;
+  width: 90%;
+  position: relative;
+}
+.input textarea {
+  padding: 10px;
+  margin: 10px;
+  width: 90%;
+  color: rgb(48, 53, 55);
+}
+.input .check {
+  display: inline;
+  width: 10%;
+}
+
+.checkGrande:nth-child(n) {
+  display: inline;
+  margin: 0;
+}/*# sourceMappingURL=main.css.map */

@@ -119,3 +119,64 @@
     }
 }
 
+.input {
+    .final{
+        display: flex;
+        flex-flow: column nowrap;
+        align-content:center;
+        text-align: center;
+        .boton{
+            width: auto;
+            text-align: center;
+        }
+    }
+}
+
+/* Validar */
+#infoValid {
+    form{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    div.checkGrande {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+/* Guía de lugares */
+#main{
+    .filtros {
+        ul{
+            display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        }
+    }
+}
+
+#listadoLugares{
+    ul{
+        display: flex;
+        z-index: 1000;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: center;
+        align-content: space-around;
+    }
+    li{
+        &.itemGuia{
+            &:nth-child(n){
+                div{
+                    display: flex;
+                    z-index: 1000;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+}

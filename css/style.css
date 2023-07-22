@@ -583,11 +583,7 @@
     height: auto;
     display: inline-block; 
 } */
-#infoValid div.input {
-    /* width: 40%; */
-    height: auto;
-    /* display: inline-block; */
-}
+
 
 
 div.checkGrande {
@@ -683,7 +679,7 @@ div.checkGrande {
 }
 
 
-div.lugar iframe{
+.lugar iframe{
     width: 100%;
     height: 100%;
 }
@@ -696,17 +692,24 @@ div.lugar iframe{
     background-color: #eaf6de;
 }
 
-input.hoverBoton:hover {
+/* input.hoverBoton:hover {
     border: 3px solid white;
 }
 
 a.hoverBoton:hover {
     border: 3px solid white;
 }
+ */
+ .hoverBoton {
+    border: 3px solid rgba(255, 255, 255, 0);
+  }
+  .hoverBoton:hover {
+    border: 3px solid rgba(255, 255, 255, 0.484);
+  }
 
-#bodyGuia, #bodyInfo{
+/*   #bodyGuia, #bodyInfo{
     background-image: url(../images/cielo-con-nubes_5102x3567_xtrafondos.com.jpg);
-} 
+}  */
 
 .fondoCielo {
     background-image: url(../images/cielo-con-nubes_5102x3567_xtrafondos.com.jpg);
