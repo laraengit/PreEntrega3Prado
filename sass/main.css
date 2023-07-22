@@ -543,6 +543,15 @@ section.info {
   background-color: #eaf6de;
 }
 
+/* Animaciones */
+/* @keyframes anima-input {
+    50%{
+        background-color: rgba(188, 233, 250, 0.479);
+    }
+    100%{
+        background-color: rgb(188, 233, 250);
+    }
+} */
 /* Formularios */
 .input {
   padding: 15px;
@@ -559,6 +568,18 @@ section.info {
   position: relative;
   text-align: left;
 }
+.input input:not(.boton) {
+  transition: all 1s;
+}
+.input input:not(.boton):focus {
+  background-color: rgb(188, 233, 250);
+}
+.input input:not(.boton):not(:-moz-placeholder-shown) {
+  background-color: rgb(192, 226, 192);
+}
+.input input:not(.boton):not(:placeholder-shown) {
+  background-color: rgb(192, 226, 192);
+}
 .input label {
   display: block;
 }
@@ -569,12 +590,26 @@ section.info {
   display: inline;
   width: 90%;
   position: relative;
+  transition: all 0.5s;
+}
+.input select:focus {
+  background-color: rgb(188, 233, 250);
 }
 .input textarea {
   padding: 10px;
   margin: 10px;
   width: 90%;
   color: rgb(48, 53, 55);
+  transition: all 1s;
+}
+.input textarea:focus {
+  background-color: rgb(188, 233, 250);
+}
+.input textarea:not(:-moz-placeholder-shown) {
+  background-color: rgb(192, 226, 192);
+}
+.input textarea:not(:placeholder-shown) {
+  background-color: rgb(192, 226, 192);
 }
 .input .check {
   display: inline;
