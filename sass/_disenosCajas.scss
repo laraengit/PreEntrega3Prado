@@ -1,9 +1,16 @@
 /* Diseño */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
 
 .hoverBoton{
-    border:3px solid;
+    border:3px solid rgba(255, 255, 255, 0);
     &:hover{
-        border: white;
+        border:3px solid rgba(255, 255, 255, 0.484);
     }
 }
 
@@ -19,6 +26,41 @@
 
 .fondoCielo {
     background-image: url(../images/cielo-con-nubes_5102x3567_xtrafondos.com.jpg);
+}
+
+.botones {
+    a{
+        /*  background-color: #7cbd9e; */
+         display: inline-block;
+         width: 30%;
+         border-radius: 10px;
+         padding: 10px;
+         
+         text-align: center;
+        
+         /* margin-top: 30px; */
+         margin: 2% 35%;
+         text-decoration: none;
+     }
+}
+
+.pie{
+    background-color: rgb(247, 247, 247);
+    height: 60px;
+    padding: 10px;
+    div {
+        a {
+            text-decoration: none;
+            color: #FF914D;
+        }
+    }
+    .logo {
+        img {
+            width: auto;
+            height:50px;
+        }
+    }
+    
 }
 
 /* Contacto y Validar */

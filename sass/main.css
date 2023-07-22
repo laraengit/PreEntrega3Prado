@@ -25,6 +25,11 @@
   border: 2px solid #7bbfbf;
 }
 
+.blanco {
+  background-color: white;
+  border: 2px solid white;
+}
+
 .claro {
   background-color: #f3f5f1;
   border: 2px solid #f3f5f1;
@@ -35,7 +40,205 @@
   border: 2px solid #eaf6de;
 }
 
-/* Letras */ /* Responsive */ /* Estructura */
+.negroClaro {
+  background-color: #222b2b;
+  border: 2px solid #222b2b;
+}
+
+/* Letras */
+.destacado1 {
+  text-align: center;
+  font-family: "Oleo Script", cursive;
+  color: #FF914D;
+}
+
+.destacado2 {
+  text-align: center;
+  font-family: "Oleo Script", cursive;
+  color: #FDAFC2;
+}
+
+.separaSecc, .separaSecc2 {
+  font-family: "Mulish", sans-serif;
+  color: white;
+}
+
+.separaSeccVerde {
+  font-family: "Mulish", sans-serif;
+  color: #6bba49;
+}
+
+.separaSeccVerde {
+  font-family: "Mulish", sans-serif;
+  color: #6bba49;
+}
+
+.separaSecc3Negra {
+  font-family: "Mulish", sans-serif;
+  color: #222b2b;
+}
+
+.apartLetra {
+  font-family: "Karla", sans-serif;
+  color: #222b2b;
+}
+
+.input input {
+  font-family: "Karla", sans-serif;
+  color: #222b2b;
+}
+
+.botones a {
+  font-family: "Open Sans", sans-serif;
+  color: #f3f5f1;
+  font-weight: bold;
+}
+
+.pie {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  color: #FF914D;
+  font-weight: bold;
+}
+
+/* Responsive */
+/* Mobile */
+@media (max-width: 700px) {
+  div.logo, div.copyright {
+    visibility: hidden;
+  }
+  .headerHeight {
+    height: 80px;
+  }
+  #mod_der, #mod_izq {
+    width: 100%;
+    /* padding: 20px; */
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  #contacto > form > div {
+    width: 60%;
+  }
+  .destacado2 {
+    font-size: 15pt;
+  }
+  .destacado1 {
+    font-size: 30pt;
+  }
+  .botones a {
+    font-size: 60%;
+  }
+  .separaSecc, .separaSecc2 {
+    font-size: 15pt;
+  }
+  .separaSecc2 {
+    font-size: 12pt;
+  }
+  .separaSeccVerde {
+    font-size: 15pt;
+  }
+  .separaSecc3Negra {
+    font-size: 11pt;
+  }
+  .input input {
+    font-size: 100%;
+  }
+  .pie {
+    font-size: 60%;
+  }
+  .apartLetra {
+    font-size: 70%;
+  }
+}
+/* Tablet */
+@media (min-width: 701px) and (max-width: 1200px) {
+  .headerHeight {
+    height: 80px;
+  }
+  #mod_der, #mod_izq {
+    width: 45%;
+    padding: 1%;
+    margin: 2%;
+  }
+  #contacto > form > div {
+    width: 40%;
+  }
+  .destacado2 {
+    font-size: 19.5pt;
+  }
+  .destacado1 {
+    font-size: 39pt;
+  }
+  .botones a {
+    font-size: 78%;
+  }
+  .separaSecc, .separaSecc2 {
+    font-size: 19.5pt;
+  }
+  .separaSecc2 {
+    font-size: 15.6pt;
+  }
+  .separaSeccVerde {
+    font-size: 19.5pt;
+  }
+  .separaSecc3Negra {
+    font-size: 14.3pt;
+  }
+  .input input {
+    font-size: 130%;
+  }
+  .pie {
+    font-size: 78%;
+  }
+  .apartLetra {
+    font-size: 91%;
+  }
+}
+/* Computadora grande */
+@media (min-width: 1201px) {
+  .headerHeight {
+    height: 80px;
+  }
+  #mod_der, #mod_izq {
+    width: 45%;
+    padding: 1%;
+    margin: 2%;
+  }
+  #contacto > form > div {
+    width: 40%;
+  }
+  .destacado2 {
+    font-size: 22.5pt;
+  }
+  .destacado1 {
+    font-size: 45pt;
+  }
+  .botones a {
+    font-size: 90%;
+  }
+  .separaSecc, .separaSecc2 {
+    font-size: 22.5pt;
+  }
+  .separaSecc2 {
+    font-size: 18pt;
+  }
+  .separaSeccVerde {
+    font-size: 22.5pt;
+  }
+  .separaSecc3Negra {
+    font-size: 16.5pt;
+  }
+  .input input {
+    font-size: 150%;
+  }
+  .pie {
+    font-size: 90%;
+  }
+  .apartLetra {
+    font-size: 105%;
+  }
+}
+/* Estructura */
 /* Grid */
 .gridHeader {
   grid-area: encabezado;
@@ -118,6 +321,43 @@
 }
 
 /* Estructura interna */
+.pie {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* Index */
+#main .inicio {
+  display: flex;
+}
+#main video {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+#mandarAtras {
+  z-index: -1;
+}
+
+#mod_der, #mod_izq {
+  display: inline-block;
+}
+
+#mod_izq {
+  border: 0;
+}
+
+#modulos section {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
 /* Contacto */
 #contacto {
   margin-top: 10px;
@@ -143,6 +383,7 @@
 #infoValid form {
   display: flex;
   flex-flow: column wrap;
+  justify-content: center;
 }
 #infoValid div.checkGrande {
   display: flex;
@@ -175,11 +416,19 @@
 }
 
 /* Diseño */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
 .hoverBoton {
-  border: 3px solid;
+  border: 3px solid rgba(255, 255, 255, 0);
 }
 .hoverBoton:hover {
-  border: white;
+  border: 3px solid rgba(255, 255, 255, 0.484);
 }
 
 .relleno {
@@ -193,6 +442,32 @@
 
 .fondoCielo {
   background-image: url(../images/cielo-con-nubes_5102x3567_xtrafondos.com.jpg);
+}
+
+.botones a {
+  /*  background-color: #7cbd9e; */
+  display: inline-block;
+  width: 30%;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  /* margin-top: 30px; */
+  margin: 2% 35%;
+  text-decoration: none;
+}
+
+.pie {
+  background-color: rgb(247, 247, 247);
+  height: 60px;
+  padding: 10px;
+}
+.pie div a {
+  text-decoration: none;
+  color: #FF914D;
+}
+.pie .logo img {
+  width: auto;
+  height: 50px;
 }
 
 /* Contacto y Validar */

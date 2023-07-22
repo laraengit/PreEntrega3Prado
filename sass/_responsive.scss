@@ -1,1 +1,96 @@
 /* Responsive */
+//Variables
+$chico: 700px;
+$grande:1200px;
+
+//Funcion de valores repetidos en media
+@mixin letrasMedias($dest1,$dest2,$secc,$secc2,$secc3,$input,$botones,$texto){
+
+    .destacado2{
+        font-size: $dest2;
+    }
+    .destacado1{
+        font-size: $dest1;
+    }
+    .botones a{
+        font-size: $botones;
+    }
+
+    .separaSecc {
+        font-size: $secc;
+    }
+    .separaSecc2 {
+        font-size: $secc2;
+    }
+    
+    .separaSeccVerde {
+        font-size: $secc;
+    }
+    
+    .separaSecc3Negra {
+        font-size: $secc3;
+    }
+
+    .input input{
+        font-size: $input;
+    }
+
+    .pie {
+        font-size: $botones;
+    }
+    .apartLetra {
+        font-size: $texto;
+    }
+
+}
+/* Mobile */
+@media (max-width:$chico){
+    div.logo, div.copyright {
+        visibility: hidden;
+    }
+    .headerHeight {
+        height: 80px;
+    }
+    #mod_der,#mod_izq {
+        width: 100%;
+        /* padding: 20px; */
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    #contacto > form > div {
+        width: 60%;
+    }
+    @include letrasMedias($tamDestacado1,$tamDestacado2,$tamTitSecc1,$tamTitSecc2,$tamTitSecc3,$tamInput,$tamBotones,$tamTexto);
+}
+/* Tablet */
+@media (min-width:($chico + 1px)) and (max-width:$grande){
+
+    .headerHeight {
+        height: 80px;
+    }
+    #mod_der,#mod_izq {
+        width: 45%;
+        padding: 1%;
+        margin: 2%;
+    }
+    #contacto > form > div {
+        width: 40%;
+    }
+    @include letrasMedias($tamDestacado1*1.3,$tamDestacado2*1.3,$tamTitSecc1*1.3,$tamTitSecc2*1.3,$tamTitSecc3*1.3,$tamInput*1.3,$tamBotones*1.3,$tamTexto*1.3);
+}
+/* Computadora grande */
+@media (min-width:($grande + 1px)){
+   
+    .headerHeight {
+        height: 80px;
+    }
+    #mod_der,#mod_izq {
+        width: 45%;
+        padding: 1%;
+        margin: 2%;
+    }
+    #contacto > form > div {
+        width: 40%;
+    }
+    @include letrasMedias($tamDestacado1*1.5,$tamDestacado2*1.5,$tamTitSecc1*1.5,$tamTitSecc2*1.5,$tamTitSecc3*1.5,$tamInput*1.5,$tamBotones*1.5,$tamTexto*1.5);
+}

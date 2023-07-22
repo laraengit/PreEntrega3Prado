@@ -7,8 +7,10 @@ $colores: (
     rosa: #FDAFC2,
     naranja: #FF914D,
     celeste: #7bbfbf,
+    blanco: white,
     claro:#f3f5f1,
-    verdeMuyClaro:#eaf6de
+    verdeMuyClaro:#eaf6de,
+    negroClaro:#222b2b
 );
 
 @mixin colorCaja($color)

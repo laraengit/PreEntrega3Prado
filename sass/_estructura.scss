@@ -109,6 +109,42 @@
 }
 
 /* Estructura interna */
+.pie{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+/* Index */
+#main {
+    .inicio{
+        display: flex;
+    }
+    video{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+}
+#mandarAtras {
+    z-index: -1;
+}
+#mod_der,#mod_izq {
+    display: inline-block;
+}
+#mod_izq {
+    border: 0;
+}
+#modulos{
+    section{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
 /* Contacto */
 #contacto {
     margin-top: 10px;
@@ -137,6 +173,8 @@
     form{
         display: flex;
         flex-flow: column wrap;
+        justify-content: center;
+        
     }
     div.checkGrande {
         display: flex;
