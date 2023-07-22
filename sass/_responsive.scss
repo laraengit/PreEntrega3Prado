@@ -92,5 +92,5 @@ $grande:1200px;
     #contacto > form > div {
         width: 40%;
     }
-    @include letrasMedias($tamDestacado1*1.5,$tamDestacado2*1.5,$tamTitSecc1*1.5,$tamTitSecc2*1.5,$tamTitSecc3*1.5,$tamInput*1.5,$tamBotones*1.5,$tamTexto*1.5);
+    @include letrasMedias($tamDestacado1*1.4,$tamDestacado2*1.4,$tamTitSecc1*1.4,$tamTitSecc2*1.4,$tamTitSecc3*1.4,$tamInput*1.4,$tamBotones*1.4,$tamTexto*1.4);
 }

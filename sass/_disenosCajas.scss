@@ -64,6 +64,7 @@
 }
 
 /* Contacto y Validar */
+
 /* Guía de lugares */
 #main {
     nav {
@@ -88,42 +89,42 @@
         }
     }
 
-    #listadoLugares{
-        ul{
-            margin: 5%;
-            text-align: center;
-            padding: 0;
-        }
-        li{
-            &.itemGuia{
-                padding: 1%;
-                margin: 1%;
-                height: 350px; 
-                width: 500px;
-                background-color: map-get($colores, claro );
-                &:hover{
-                    background-color: map-get($map: $colores, $key: verdeMuyClaro);
-                }
+}
+#listadoLugares{
+    ul{
+        margin: 5%;
+        text-align: center;
+        padding: 0;
+    }
+    li{
+        &.itemGuia{
+            padding: 1%;
+            margin: 1%;
+            height: 350px; 
+            width: 500px;
+            background-color: map-get($colores, claro );
+            &:hover{
+                background-color: map-get($map: $colores, $key: verdeMuyClaro);
             }
         }
     }
+}
 
-    .dataValid {
-        li{
-            margin: 10px;
-            text-align: center;
-        }
-        input{
-            bottom: 0;
-         }
-    }
-    
-    .lugar {
+.dataValid {
+    li{
         margin: 10px;
-        iframe{
-            width: 100%;
-            height: 100%;
-        }
+        text-align: center;
+    }
+    input{
+        bottom: 0;
+     }
+}
+
+.lugar {
+    margin: 10px;
+    iframe{
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -137,7 +138,7 @@ article {
 }
 
 section{
-    .info{
+    &.info{
         width: 80%;
         margin: 2% 10%;
         padding: 1%;

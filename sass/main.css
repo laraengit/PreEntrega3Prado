@@ -120,13 +120,13 @@
     width: 60%;
   }
   .destacado2 {
-    font-size: 15pt;
+    font-size: 20pt;
   }
   .destacado1 {
     font-size: 30pt;
   }
   .botones a {
-    font-size: 60%;
+    font-size: 9pt;
   }
   .separaSecc, .separaSecc2 {
     font-size: 15pt;
@@ -141,13 +141,13 @@
     font-size: 11pt;
   }
   .input input {
-    font-size: 100%;
+    font-size: 9pt;
   }
   .pie {
-    font-size: 60%;
+    font-size: 9pt;
   }
   .apartLetra {
-    font-size: 70%;
+    font-size: 9pt;
   }
 }
 /* Tablet */
@@ -164,13 +164,13 @@
     width: 40%;
   }
   .destacado2 {
-    font-size: 19.5pt;
+    font-size: 26pt;
   }
   .destacado1 {
     font-size: 39pt;
   }
   .botones a {
-    font-size: 78%;
+    font-size: 11.7pt;
   }
   .separaSecc, .separaSecc2 {
     font-size: 19.5pt;
@@ -185,13 +185,13 @@
     font-size: 14.3pt;
   }
   .input input {
-    font-size: 130%;
+    font-size: 11.7pt;
   }
   .pie {
-    font-size: 78%;
+    font-size: 11.7pt;
   }
   .apartLetra {
-    font-size: 91%;
+    font-size: 11.7pt;
   }
 }
 /* Computadora grande */
@@ -208,34 +208,34 @@
     width: 40%;
   }
   .destacado2 {
-    font-size: 22.5pt;
+    font-size: 28pt;
   }
   .destacado1 {
-    font-size: 45pt;
+    font-size: 42pt;
   }
   .botones a {
-    font-size: 90%;
+    font-size: 12.6pt;
   }
   .separaSecc, .separaSecc2 {
-    font-size: 22.5pt;
+    font-size: 21pt;
   }
   .separaSecc2 {
-    font-size: 18pt;
+    font-size: 16.8pt;
   }
   .separaSeccVerde {
-    font-size: 22.5pt;
+    font-size: 21pt;
   }
   .separaSecc3Negra {
-    font-size: 16.5pt;
+    font-size: 15.4pt;
   }
   .input input {
-    font-size: 150%;
+    font-size: 12.6pt;
   }
   .pie {
-    font-size: 90%;
+    font-size: 12.6pt;
   }
   .apartLetra {
-    font-size: 105%;
+    font-size: 12.6pt;
   }
 }
 /* Estructura */
@@ -378,6 +378,9 @@
   width: auto;
   text-align: center;
 }
+.input .final label {
+  display: inline;
+}
 
 /* Validar */
 #infoValid form {
@@ -399,7 +402,7 @@
   justify-content: space-around;
 }
 
-#listadoLugares ul {
+#listadoLugares > ul {
   display: flex;
   z-index: 1000;
   flex-flow: row wrap;
@@ -407,7 +410,7 @@
   justify-content: center;
   align-content: space-around;
 }
-#listadoLugares li.itemGuia:nth-child(n) div {
+#listadoLugares li.itemGuia > div {
   display: flex;
   z-index: 1000;
   flex-flow: row nowrap;
@@ -491,32 +494,35 @@
   height: auto;
   text-align: center;
 }
-#main #listadoLugares ul {
+
+#listadoLugares ul {
   margin: 5%;
   text-align: center;
   padding: 0;
 }
-#main #listadoLugares li.itemGuia {
+#listadoLugares li.itemGuia {
   padding: 1%;
   margin: 1%;
   height: 350px;
   width: 500px;
   background-color: #f3f5f1;
 }
-#main #listadoLugares li.itemGuia:hover {
+#listadoLugares li.itemGuia:hover {
   background-color: #eaf6de;
 }
-#main .dataValid li {
+
+.dataValid li {
   margin: 10px;
   text-align: center;
 }
-#main .dataValid input {
+.dataValid input {
   bottom: 0;
 }
-#main .lugar {
+
+.lugar {
   margin: 10px;
 }
-#main .lugar iframe {
+.lugar iframe {
   width: 100%;
   height: 100%;
 }
@@ -530,7 +536,7 @@ article:nth-child(n) {
   margin-top: 0.5%;
 }
 
-section .info {
+section.info {
   width: 80%;
   margin: 2% 10%;
   padding: 1%;
@@ -552,6 +558,9 @@ section .info {
   width: 90%;
   position: relative;
   text-align: left;
+}
+.input label {
+  display: block;
 }
 .input select {
   color: rgb(48, 53, 55);

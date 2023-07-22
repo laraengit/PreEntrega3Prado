@@ -14,7 +14,9 @@
         position: relative;
         text-align: left;
     }
-
+    label{
+        display: block; 
+    }
     select{
         color: rgb(48, 53, 55);
         padding: 10px;
@@ -43,3 +45,4 @@
         margin:0;
     }
 }
+
